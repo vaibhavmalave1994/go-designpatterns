@@ -18,3 +18,7 @@ As far as we have described, we must dispose of a Builder of type Car and Motorb
 2. When using a car builder, the VehicleProduct with four wheels, five seats, and a structure defined as Car must be returned
 3. When using a motorbike builder, the VehicleProduct with two wheels, two seats, and a structure defined as Motorbike must be returned
 4. A VehicleProduct built by any BuildProcess builder must be open to modifications
+
+# Notes
+1. The builder design pattern helps us maintain unpredictable products by using common construction algoritham that is used by the director
+2. Avoid using builder pattern if you are not sure that algoritham is going to be more or less stable because any small change in interface will effect all your builders
